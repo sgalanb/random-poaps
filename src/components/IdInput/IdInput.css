@@ -1,0 +1,53 @@
+.eventIdForm {
+    display: grid;
+    grid-template-columns: 2fr;
+    align-items: center;
+    width: 45rem;
+    margin: 2rem;
+}
+
+.eventIdInput {
+    text-decoration: none;
+    font-size: 1.75rem;
+    font-weight: 400;
+    width: 45rem;
+    height: 4rem;
+    box-sizing: border-box;
+    border-width: 3px;
+    border-radius: 25px;
+    border-color: #fff;
+    border-style: solid; 
+    background-color: #fff;
+    padding-left: 20px;
+}
+
+.eventIdInput:focus {
+    border-color: #6534FF;
+    outline: none;
+}
+
+.eventIdInput::placeholder {
+    font-size: 1.75rem;
+}
+
+.eventIdDiv {
+    grid-column-start: 2;
+    width: 5rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #6534FF;
+    border-radius: 0 25px 25px 0;
+    margin-left: -80px;
+}
+
+.EventIdP {
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: #fff;
+    background-color: transparent;
+    margin: 0px;
+}
