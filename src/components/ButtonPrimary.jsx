@@ -4,6 +4,6 @@ import './ButtonPrimary.css'
 export default function ButtonPrimary({text}) {
     
     return (
-        <button>{text}</button>
+        <button onClick={() => {console.log('Hello')}}>{text}</button>
     )
 }
