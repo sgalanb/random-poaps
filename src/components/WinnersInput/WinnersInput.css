@@ -1,0 +1,87 @@
+.winnersInputForm {
+    display: grid;
+    grid-template-columns: 2fr;
+    align-items: center;
+    width: 12rem;
+    margin: 2rem;
+}
+
+.winnersInputInput{
+    text-decoration: none;
+    font-size: 1.75rem;
+    font-weight: 400;
+    width: 12rem;
+    height: 4rem;
+    box-sizing: border-box;
+    border-width: 3px;
+    border-radius: 25px;
+    border-color: #fff;
+    border-style: solid; 
+    background-color: #fff;
+    padding-left: 70px;
+}
+
+.winnersInputInput:focus {
+    border-color: #6534FF;
+    outline: none;
+}
+
+.winnersInputInput::placeholder {
+    font-size: 1.75rem;
+}
+
+.WinnersInputDivBox {
+    grid-column-start: 2;
+    display: flex;
+    flex-direction: column;
+    width: 3rem;
+    height: 4rem;
+    color: #fff;
+}
+
+.WinnersInputDivPlus {
+    width: 3rem;
+    height: 2rem;
+    background-color: #6534FF;
+    border-radius: 0 25px 0 0;
+    margin-left: -46px;
+}
+
+.WinnersInputDivMinus {
+    width: 3rem;
+    height: 2rem;
+    flex-direction: column;
+    background-color: #6534FF;
+    border-radius: 0 0 25px 0;
+    margin-left: -46px;
+}
+
+.WinnersInputSVGPlus  {
+    font-size: 2rem;
+    text-align: center;
+    align-items: center;
+    background-color: transparent;
+    filter: invert(100%);
+}
+
+.WinnersInputSVGPlusContainer{
+    width: 1rem;
+    background-color: transparent;
+    margin-left: 15px;
+    margin-top: 7.5px;
+}
+
+.WinnersInputSVGMinus {
+    font-size: 2rem;
+    text-align: center;
+    align-items: center;
+    background-color: transparent;
+    filter: invert(100%);
+}
+
+.WinnersInputSVGMinusContainer{
+    width: 1rem;
+    background-color: transparent;
+    margin-left: 15px;
+    margin-top: 5px;
+}

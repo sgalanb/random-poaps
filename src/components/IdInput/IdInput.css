@@ -50,4 +50,5 @@
     color: #fff;
     background-color: transparent;
     margin: 0px;
+    user-select: none;
 }

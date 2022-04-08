@@ -2,11 +2,11 @@ import React, {useState} from "react";
 import './IdInput.css'
 
 export default function IdInput() {
-    const [Id, setId] = useState('')
+    const [id, setId] = useState('')
 
     const handleSubmit = evt => {
         evt.preventDefault()
-        if (!Id == '') {
+        if (!id == '' & id < 99999 & id > 0) {
             console.log('Tiene número')
         }
     }
@@ -17,7 +17,7 @@ export default function IdInput() {
 
     return (
         <form className="eventIdForm" onSubmit={handleSubmit}>
-            <input className="eventIdInput" type='number' onChange={handleChange} value={Id} placeholder='Event ID'/>
+            <input className="eventIdInput" type='number' min={1} max={99999} onChange={handleChange} value={id} placeholder='Event ID'/>
             <div className="eventIdDiv" onClick={handleSubmit}>
                 <p className="EventIdP">ADD</p>
             </div>
