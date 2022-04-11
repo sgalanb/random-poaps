@@ -18,7 +18,8 @@
     border-color: #fff;
     border-style: solid; 
     background-color: #fff;
-    padding-left: 70px;
+    padding-right: 20px;
+    text-align: center;
 }
 
 .winnersInputInput:focus {

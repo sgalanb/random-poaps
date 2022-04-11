@@ -15,7 +15,7 @@ function App() {
       <EventName text={'Belo to the Moon'} url={'https://poap.gallery/event/31287'} />
       <ButtonPrimary text={'Create Raffle'} />
       <IdInput />
-      <WinnersInput />
+      <WinnersInput numberOfAddresses={100} />
     </div>
   );
 }

@@ -18,9 +18,9 @@ export default function IdInput() {
     return (
         <form className="eventIdForm" onSubmit={handleSubmit}>
             <input className="eventIdInput" type='number' min={1} max={99999} onChange={handleChange} value={id} placeholder='Event ID'/>
-            <div className="eventIdDiv" onClick={handleSubmit}>
-                <p className="EventIdP">ADD</p>
-            </div>
+            <button className="eventIdDiv" >
+            ADD
+            </button>
         </form>
     )
 }

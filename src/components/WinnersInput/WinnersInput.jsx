@@ -3,10 +3,12 @@ import './WinnersInput.css'
 import { ReactComponent as MinusSolid } from '../../images/minus-solid.svg';
 import { ReactComponent as PlusSolid } from '../../images/plus-solid.svg';
 
-export default function WinnersInput() {
-    const [winners, setWinners] = useState(1)
+export default function WinnersInput({numberOfAddresses}) {
+    const [winners, setWinners] = useState('')
 
-    let numberOfAddresses = 10
+    const handleChange = evt => {
+        setWinners(evt.target.value);
+    }
 
     const handlePlus = () => {
         if (winners < numberOfAddresses) {
@@ -22,12 +24,13 @@ export default function WinnersInput() {
         }
     }
 
-    const handleChange = evt => {
-        setWinners(evt.target.value);
+    const handleSubmit = (evt) => {
+        evt.preventDefault()
+        console.log('hola')
     }
     
     return (
-        <form className="winnersInputForm" >
+        <form className="winnersInputForm" onSubmit={handleSubmit} >
             <input className="winnersInputInput" type='number' min={1} max={numberOfAddresses} onChange={handleChange} value={winners} placeholder='Winners'/>
             <div className="WinnersInputDivBox">
                 <div className="WinnersInputDivPlus" onClick={handlePlus}>
