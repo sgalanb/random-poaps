@@ -8,9 +8,9 @@ export default function Navbar() {
     
     return (
         <div className="NavbarContainer">
-            <LinkedInSVG className="mr" color="#fff" width={'30px'} />
             <GitSVG className="mr" color="#fff" width={'30px'} />
-            <TwitterSVG color="#fff" width={'30px'} />
+            <TwitterSVG className="mr" color="#fff" width={'30px'} />
+            <LinkedInSVG color="#fff" width={'30px'} />
         </div>
     )
 }
