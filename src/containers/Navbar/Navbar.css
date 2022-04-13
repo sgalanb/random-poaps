@@ -1,0 +1,23 @@
+.Navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    padding-top: 25px;
+}
+
+.home {
+    margin-left: 50px;
+}
+
+.social {
+    margin-left: 50px;
+}
+
+.faq {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: end;
+    margin-right: 50px;
+}
