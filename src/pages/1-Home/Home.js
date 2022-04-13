@@ -9,6 +9,7 @@ export default function Home() {
         <div className="HomeContainer">
           <Navbar />
           <TitlePrimary text={'Random POAPs'} />
+          <h2> Create raffles between POAP token holders.No sign up required. </h2>
           <ButtonPrimary text={'Create Raffle'} action={
               () => {
                   console.log('hi')
