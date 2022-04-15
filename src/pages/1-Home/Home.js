@@ -7,14 +7,10 @@ import Navbar from "../../containers/Navbar/Navbar";
 export default function Home() {
     return (
         <div className="HomeContainer">
-          <Navbar />
+          <Navbar type='social' />
           <TitlePrimary text={'Random POAPs'} />
           <h2> Create raffles between POAP token holders.No sign up required. </h2>
-          <ButtonPrimary text={'Create Raffle'} action={
-              () => {
-                  console.log('hi')
-              }
-          } />
+          <ButtonPrimary text={'Create Raffle'} href={'/poaps'}/>
         </div>
       );
 }

@@ -1,0 +1,13 @@
+.singleEventContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.eventImg {
+    width: 10rem;
+}
+
+.eventName {
+    color: #fff;
+}

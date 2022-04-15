@@ -26,7 +26,6 @@ export default function WinnersInput({numberOfAddresses}) {
 
     const handleSubmit = (evt) => {
         evt.preventDefault()
-        console.log('hola')
     }
     
     return (
