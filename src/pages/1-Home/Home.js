@@ -1,6 +1,5 @@
 import React from "react";
 import './Home.css'
-import TitlePrimary from '../../components/TitlePrimary/TitlePrimary';
 import ButtonPrimary from '../../components/ButtonPrimary/ButtonPrimary';
 import Navbar from "../../containers/Navbar/Navbar";
 
@@ -8,8 +7,8 @@ export default function Home() {
     return (
         <div className="HomeContainer">
           <Navbar type='social' />
-          <TitlePrimary text={'Random POAPs'} />
-          <h2> Create raffles between POAP token holders.No sign up required. </h2>
+          <h1 className='randomPoapsTitle' >Random POAPs</h1>
+          <h2 className="randomPoapsDescription"> Create raffles between POAP token holders. No sign up required. </h2>
           <ButtonPrimary text={'Create Raffle'} href={'/poaps'}/>
         </div>
       );

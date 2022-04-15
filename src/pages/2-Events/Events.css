@@ -1,0 +1,11 @@
+.eventsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: top;
+    flex-direction: column;
+}
+
+.addPoapsTitle {
+    font-size: 4rem;
+    font-weight: bold;
+}
