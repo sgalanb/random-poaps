@@ -12,6 +12,7 @@ function App() {
       <Route component={Home} path='/number-of-winners' />
       <Route component={Home} path='/ready' />
       <Route component={Home} path='/winners' />
+      <Route component={Home} />
     </Switch>
   );
 }

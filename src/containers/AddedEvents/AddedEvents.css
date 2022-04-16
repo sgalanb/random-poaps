@@ -1,0 +1,8 @@
+.addedEventsGrid {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(12rem, 1fr) );
+    column-gap: 5rem;
+    row-gap: 2.5rem;
+    margin-top: 3rem;
+}

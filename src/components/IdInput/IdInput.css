@@ -10,6 +10,7 @@
     text-decoration: none;
     font-size: 1.75rem;
     font-weight: 400;
+    color: #000001;
     width: 45rem;
     height: 4rem;
     box-sizing: border-box;
@@ -47,7 +48,7 @@
     font-size: 1.75rem;
     font-weight: bold;
     letter-spacing: 0.5px;
-    color: #fff;
+    color: #000001;
     background-color: transparent;
     margin: 0px;
     user-select: none;

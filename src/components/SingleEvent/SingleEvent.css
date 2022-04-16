@@ -5,5 +5,18 @@
 }
 
 .eventImg {
-    width: 10rem;
+    width: 12rem;
+}
+
+.eventName {
+    width: 12rem;
+    font-size: 1.5rem;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 1; /* Waiting for standarization? */
+    -webkit-box-orient: vertical;
+    margin: 8px 0 8px 0;
 }
