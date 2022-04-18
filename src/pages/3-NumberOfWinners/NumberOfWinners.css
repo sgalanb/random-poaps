@@ -1,6 +1,6 @@
-.eventsContainer {
+.numberOfWinnersContainer {
     display: flex;
     align-items: center;
-    justify-content: top;
+    justify-content: center;
     flex-direction: column;
 }

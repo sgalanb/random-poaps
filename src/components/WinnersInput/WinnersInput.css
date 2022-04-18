@@ -4,6 +4,7 @@
     align-items: center;
     width: 12rem;
     margin: 2rem;
+    margin-bottom: 68px;
 }
 
 .winnersInputInput{
@@ -12,6 +13,7 @@
     font-weight: 400;
     width: 12rem;
     height: 4rem;
+    color: #000001;
     box-sizing: border-box;
     border-width: 3px;
     border-radius: 25px;
