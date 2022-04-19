@@ -4,14 +4,11 @@ import SingleEvent from '../../components/SingleEvent/SingleEvent';
 import IdContext from '../../context/IdContext';
 
 export default function AddedEvents() {
-    const idContext = useContext(IdContext)
-    console.log(idContext)
-
-    const listOfIDs = [443, 215, 12490, 4214, 424, 898] 
+    const { state } = useContext(IdContext)
 
     return (
         <div className='addedEventsGrid'>
-            { listOfIDs.map(id => <SingleEvent key={id} id={id}/> )}
+            { state.listOfIDs.map(id => <SingleEvent key={id} id={id}/> )}
         </div>
     )
 }

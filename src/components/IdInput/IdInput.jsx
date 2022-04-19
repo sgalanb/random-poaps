@@ -1,13 +1,25 @@
-import React, {useState} from "react";
+import React, {useContext, useState} from "react";
 import './IdInput.css'
+import IdContext from "../../context/IdContext";
+import useMaxID from "../../hooks/useMaxID";
 
 export default function IdInput() {
+    const { addID, state } = useContext(IdContext)
     const [id, setId] = useState('')
+    const [maxID] = useMaxID()
+    const isRepeated = !state.listOfIDs.find(element => element == id)
 
     const handleSubmit = evt => {
         evt.preventDefault()
-        if (!id == '' & id < 99999 & id > 0) {
-            console.log('Tiene número')
+        if (!id == '' & id <= maxID) {
+            if (isRepeated) {
+                addID(id)
+                setId('')
+            } else {
+                alert(`Event already added`)
+            }
+        } else {
+            alert(`There is no events with this ID: ${id}`)
         }
     }
 
@@ -17,7 +29,7 @@ export default function IdInput() {
 
     return (
         <form className="eventIdForm" onSubmit={handleSubmit}>
-            <input className="eventIdInput" type='number' min={1} max={99999} onChange={handleChange} value={id} placeholder='Event ID'/>
+            <input className="eventIdInput" type='number' min={1} onChange={handleChange} value={id} placeholder='Event ID'/>
             <button className="eventIdDiv" >
             ADD
             </button>
