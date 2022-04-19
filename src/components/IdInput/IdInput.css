@@ -53,3 +53,13 @@
     margin: 0px;
     user-select: none;
 }
+
+@media (max-width: 802px) {
+    .eventIdForm {
+        width: 90%;
+    }
+
+    .eventIdInput {
+        width: 95%;
+    }
+}

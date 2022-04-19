@@ -5,3 +5,10 @@
     margin: 5px;
     margin-top: 68px;
 }
+
+@media (max-width: 802px) {
+    .heading2 {
+        margin: 0 10px 0 10px;
+        margin-top: 25%;
+    }
+}
