@@ -6,6 +6,15 @@
 
 .eventImg {
     width: 12rem;
+    height: 12rem;
+}
+
+.eventImg:hover {
+    opacity: 100%;
+    mask-image: url('../../images/xmark-solid.svg');
+    mask-repeat: no-repeat;
+    mask-size: 8rem;
+    mask-position: center;
 }
 
 .eventName {
