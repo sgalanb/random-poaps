@@ -8,9 +8,15 @@ export default function Navbar() {
     
     return (
         <div className="NavbarContainer">
-            <GitSVG className="mr" color="#fff" width={'30px'} />
-            <TwitterSVG className="mr" color="#fff" width={'30px'} />
-            <LinkedInSVG color="#fff" width={'30px'} />
+            <a className="icon-links" target="_blank" rel="noopener noreferrer" href="https://github.com/sgalanb">
+                <GitSVG className="mr" color="#fff" width={'30px'} />
+            </a>
+            <a className="icon-links" target="_blank" rel="noopener noreferrer" href="https://twitter.com/sgalanb">
+                <TwitterSVG className="mr" color="#fff" width={'30px'} />
+            </a>
+            <a className="icon-links" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/santiago-gal%C3%A1n-barlo/">
+                <LinkedInSVG color="#fff" width={'30px'} />
+            </a> 
         </div>
     )
 }

@@ -1,7 +1,10 @@
 .NavbarContainer {
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
     margin-left: 50px;
 }
 
-.mr {
-    margin-right: 25px;
+.icon-links {
+    display: block;
+    width: 30px;
 }
