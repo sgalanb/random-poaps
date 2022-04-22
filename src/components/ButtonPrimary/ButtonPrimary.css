@@ -8,4 +8,20 @@ button {
     border-radius: 25px;
     width: 15rem;
     height: 4rem;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+}
+
+button:hover {
+    transition: all 0.3s ease 0s;
+    text-shadow: 0px 0px 25px #fff;
+    box-shadow: 0px 0px 15px #6534FF;
+
+}
+
+button:active {
+    opacity: 80%;
+    transition: all 0.3s ease 0s;
+    text-shadow: 0px 0px 25px #fff;
+    box-shadow: 0px 0px 15px #6534FF;
 }
