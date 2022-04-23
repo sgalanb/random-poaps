@@ -10,7 +10,7 @@ export default function NumberOfWinners() {
     return (
         <div className='numberOfWinnersContainer'>
             <Navbar />
-            <NavArrows backPath={'/poaps'} nextPath={'/'} />
+            <NavArrows backPath={'/poaps'} nextPath={'/ready'} />
             <Heading2 text={'Select the number of winners'} />
             <WinnersInput numberOfAddresses={1000} />
         </div>

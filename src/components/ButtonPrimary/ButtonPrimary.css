@@ -1,8 +1,7 @@
-button {
+.button-primary {
     text-decoration: none;
     font-size: 2rem;
     font-weight: bold;
-    color: #fff;
     background-color: #6534FF;
     border: none;
     border-radius: 25px;
@@ -10,16 +9,17 @@ button {
     height: 4rem;
     cursor: pointer;
     letter-spacing: 0.5px;
+    margin-bottom: 68px;
 }
 
-button:hover {
+.button-primary:hover {
     transition: all 0.3s ease 0s;
     text-shadow: 0px 0px 25px #fff;
     box-shadow: 0px 0px 15px #6534FF;
 
 }
 
-button:active {
+.button-primary:active {
     opacity: 80%;
     transition: all 0.3s ease 0s;
     text-shadow: 0px 0px 25px #fff;

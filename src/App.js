@@ -6,6 +6,7 @@ import Events from './pages/2-Events/Events';
 import NumberOfWinners from './pages/3-NumberOfWinners/NumberOfWinners';
 import IdContext from './context/IdContext';
 import useInitialState from './hooks/useInitialState';
+import Ready from './pages/4-Ready/Ready';
 
 function App() {
   
@@ -17,7 +18,7 @@ function App() {
         <Route component={Home} path='/' />
         <Route component={Events} path='/poaps' />
         <Route component={NumberOfWinners} path='/number-of-winners' />
-        <Route component={Home} path='/ready' />
+        <Route component={Ready} path='/ready' />
         <Route component={Home} path='/winners' />
         <Route component={Home} />
       </Switch>

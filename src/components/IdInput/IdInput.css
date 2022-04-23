@@ -39,8 +39,14 @@
     justify-content: center;
     flex-direction: column;
     background-color: #6534FF;
+    border: none;
     border-radius: 0 25px 25px 0;
     margin-left: -80px;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
 }
 
 .EventIdP {
