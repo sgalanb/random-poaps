@@ -1,0 +1,32 @@
+.arrows {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+    position: fixed;
+    top: 50%;
+    bottom: 50%;
+    background-color: transparent;
+}
+
+.left-arrow {
+    margin-left: 50px;
+}
+
+.right-arrow {
+    transform: rotate(180deg);
+    margin-right: 50px;
+    position: fixed;
+    right: 0;
+}
+
+@media (max-width: 802px) {
+    .left-arrow {
+        margin-left: 10px;
+    }
+    
+    .right-arrow {
+        margin-right: 10px;
+    }
+}
