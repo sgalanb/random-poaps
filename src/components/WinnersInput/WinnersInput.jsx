@@ -12,7 +12,7 @@ export default function WinnersInput({numberOfAddresses}) {
 
     const handlePlus = () => {
         if (winners < numberOfAddresses) {
-            setWinners(parseInt(winners + 1))
+            setWinners(parseInt(winners) + 1)
         } else {
             alert("The number of winners is equal to the number of participants")
         }
@@ -20,7 +20,7 @@ export default function WinnersInput({numberOfAddresses}) {
 
     const handleMinus = () => {
         if (winners > 1) {
-            setWinners(parseInt(winners - 1))
+            setWinners(parseInt(winners) -1)
         }
     }
 
