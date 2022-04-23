@@ -22,11 +22,16 @@
 }
 
 @media (max-width: 802px) {
+    .arrows {
+        top: 85%;
+        bottom: 0;
+    }
+
     .left-arrow {
-        margin-left: 10px;
+        margin-left: 50px;
     }
     
     .right-arrow {
-        margin-right: 10px;
+        margin-right: 50px;
     }
 }
