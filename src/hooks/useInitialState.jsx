@@ -2,6 +2,7 @@ import { useState } from "react";
 
 const initialState = {
     listOfIDs: [],
+    winnersCount: 1,
 }
 
 const useInitialState = () => {
@@ -19,13 +20,20 @@ const useInitialState = () => {
             ...state,
             listOfIDs: [...state.listOfIDs.filter(e => e !== payload)]
         })
-        console.log(state)
+    }
+
+    const setContextWinners = (payload) => {
+        setState({
+            ...state,
+            winnersCount: payload 
+        })
     }
 
     return {
         state,
         addID,
-        removeID
+        removeID,
+        setContextWinners
     }
 }
 

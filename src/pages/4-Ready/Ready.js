@@ -5,8 +5,8 @@ import NavArrows from '../../components/NavArrows/NavArrows';
 import Heading2 from '../../components/Heading2/Heading2';
 import ButtonPrimary from '../../components/ButtonPrimary/ButtonPrimary'
 
+
 export default function Ready() {
-    
     return (
         <div className='ReadyContainer'>
             <Navbar />
