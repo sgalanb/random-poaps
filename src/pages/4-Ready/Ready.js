@@ -12,7 +12,7 @@ export default function Ready() {
             <Navbar />
             <NavArrows backPath={'/number-of-winners'} />
             <Heading2 text={'Everything’s ready!'} />
-            <ButtonPrimary text={'Start Raffle'} href={'/'}/>
+            <ButtonPrimary text={'Start Raffle'} href={'/results'}/>
         </div>
     )
 }

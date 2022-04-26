@@ -7,6 +7,7 @@ import NumberOfWinners from './pages/3-NumberOfWinners/NumberOfWinners';
 import IdContext from './context/IdContext';
 import useInitialState from './hooks/useInitialState';
 import Ready from './pages/4-Ready/Ready';
+import Results from './pages/5-Results/Results'
 
 function App() {
   
@@ -19,7 +20,7 @@ function App() {
         <Route component={Events} path='/poaps' />
         <Route component={NumberOfWinners} path='/number-of-winners' />
         <Route component={Ready} path='/ready' />
-        <Route component={Home} path='/winners' />
+        <Route component={Results} path='/results' />
         <Route component={Home} />
       </Switch>
     </IdContext.Provider>

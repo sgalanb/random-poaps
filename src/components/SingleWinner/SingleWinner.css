@@ -1,0 +1,21 @@
+.singleWinnerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.winner-number {
+    margin: 0 10px 0 10px;
+}
+
+.winner-address {
+    margin: 0 10px 0 10px;
+    text-decoration: none;
+}
+
+.winner-address:hover {
+    color: #6534FF;
+}
