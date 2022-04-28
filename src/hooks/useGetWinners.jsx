@@ -13,8 +13,12 @@ const useGetWinners = () => {
             let i = 1
             while (i <= state.winnersCount ) {
                 const oneNumber = Math.floor(Math.random() * (finalArray.length - 1))
-                winnersArray.push(finalArray[oneNumber])
-                i++
+                const winnerAddress = finalArray[oneNumber]
+                const alreadyWinner = winnersArray.find(element => element == winnerAddress)
+                if (alreadyWinner == undefined) {
+                    winnersArray.push(winnerAddress)
+                    i++
+                } else {console.log('repetido');}
             }
         } else {
             alert('Error with POAP API')
