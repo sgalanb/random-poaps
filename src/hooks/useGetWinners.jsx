@@ -18,7 +18,7 @@ const useGetWinners = () => {
                 if (alreadyWinner == undefined) {
                     winnersArray.push(winnerAddress)
                     i++
-                } else {console.log('repetido');}
+                }
             }
         } else {
             alert('Error with POAP API')
