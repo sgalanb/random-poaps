@@ -3,7 +3,8 @@ import './NumberOfWinners.css'
 import Heading2 from '../../components/Heading2/Heading2';
 import WinnersInput from '../../components/WinnersInput/WinnersInput'
 import Navbar from '../../containers/Navbar/Navbar';
-import NavArrows from '../../components/NavArrows/NavArrows';
+import NavArrows from '../../components/NavArrows/NavArrows'
+
 
 export default function NumberOfWinners() {
     
@@ -12,7 +13,7 @@ export default function NumberOfWinners() {
             <Navbar />
             <NavArrows backPath={'/poaps'} nextPath={'/ready'} />
             <Heading2 text={'Select the number of winners'} />
-            <WinnersInput numberOfAddresses={1000} />
+            <WinnersInput />
         </div>
     )
 }
