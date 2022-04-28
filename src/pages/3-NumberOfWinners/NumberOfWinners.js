@@ -5,9 +5,7 @@ import WinnersInput from '../../components/WinnersInput/WinnersInput'
 import Navbar from '../../containers/Navbar/Navbar';
 import NavArrows from '../../components/NavArrows/NavArrows'
 
-
-export default function NumberOfWinners() {
-    
+export default function NumberOfWinners() {   
     return (
         <div className='numberOfWinnersContainer'>
             <Navbar />

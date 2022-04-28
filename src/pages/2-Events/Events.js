@@ -14,7 +14,7 @@ export default function Events() {
       <div className='eventsContainer'>
         <Navbar />
         <NavArrows nextPath={state.listOfIDs.length == 0 ? '/poaps' : 'number-of-winners'} rightArrowFunction={() => {
-          if (state.listOfIDs.length == 0) {alert('Add at least 1 event')} else {console.log(state.listOfIDs.length)}
+          if (state.listOfIDs.length == 0) {alert('Add at least 1 event')}
         }} />
         <Heading2 text={'Add POAPs to the raffle'} />
         <IdInput />
