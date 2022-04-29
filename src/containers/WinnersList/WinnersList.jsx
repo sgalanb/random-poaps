@@ -18,7 +18,7 @@ export default function WinnersList() {
     }, [])
     
     return (
-        <div className='winnersListContainer'>
+        <div className='winnersListContainer' id={setTimeout(() => {(winnersArray.length <= 8) ? '' : 'scrollbar' }, 4800)}>
             {isLoading ? 'Loading...' : results}
         </div>
     )

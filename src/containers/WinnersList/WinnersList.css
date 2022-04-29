@@ -1,7 +1,23 @@
 .winnersListContainer {
     display: flex;
     align-items: flex-start;
-    justify-content: center; 
     flex-direction: column;
     margin-bottom: 25px;
+    max-height: 500px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.winnersListContainer::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+#scrollbar {
+    scrollbar-width: auto;
+}
+
+#scrollbar::-webkit-scrollbar {
+    width: auto;
+    height: auto;
 }
