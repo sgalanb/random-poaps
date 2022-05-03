@@ -8,3 +8,7 @@
     display: block;
     width: 30px;
 }
+
+.icon-links:hover {
+    opacity: 80%;
+}
