@@ -23,4 +23,9 @@
     font-weight: bold;
     text-align: end;
     margin-right: 50px;
+    cursor: pointer;
+}
+
+.faq:hover {
+    opacity: 80%;
 }
