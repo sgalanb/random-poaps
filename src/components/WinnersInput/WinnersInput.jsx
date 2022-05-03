@@ -3,18 +3,18 @@ import './WinnersInput.css'
 import { ReactComponent as MinusSolid } from '../../images/minus-solid.svg';
 import { ReactComponent as PlusSolid } from '../../images/plus-solid.svg';
 import IdContext from "../../context/IdContext";
-import useGetParticipants from "../../hooks/useGetParticipants";
+/* import { getTokenOwners } from "../../services/getTokenOwners"; */
 
 export default function WinnersInput() {
     const { setContextWinners, state } = useContext(IdContext)
     const [winners, setWinners] = useState(state.winnersCount)
     const [totalAddresses, setTotalAddresses] = useState(100000)
-    const finalArray = useGetParticipants()
+/*     const finalArray = getTokenOwners() */
 
     useEffect(() => {
 
         setTimeout(() => {
-            setTotalAddresses(finalArray.length)
+            setTotalAddresses(30)
         }, 1800);
     
     }, [])

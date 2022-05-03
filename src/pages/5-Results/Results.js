@@ -1,8 +1,8 @@
 import React from 'react'
-import ButtonPrimary from '../../components/ButtonPrimary/ButtonPrimary'
-import Heading2 from '../../components/Heading2/Heading2'
-import WinnersList from '../../containers/WinnersList/WinnersList'
 import './Results.css'
+import Heading2 from '../../components/Heading2/Heading2'
+import WinnersList from '../../containers/WinnersList/WinnersListFinal'
+import ButtonPrimary from '../../components/ButtonPrimary/ButtonPrimary'
 
 export default function Winners() {
     
