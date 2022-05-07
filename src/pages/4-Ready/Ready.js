@@ -8,7 +8,7 @@ import ButtonPrimary from '../../components/ButtonPrimary/ButtonPrimary'
 
 export default function Ready() {
     return (
-        <div className='ReadyContainer'>
+        <div className='ReadyContainer page'>
             <Navbar />
             <NavArrows backPath={'/number-of-winners'} />
             <Heading2 text={'Everything’s ready!'} />

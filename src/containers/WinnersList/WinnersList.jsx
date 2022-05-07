@@ -16,6 +16,7 @@ export default function WinnersList() {
             .then(totalAddresses => getWinners(totalAddresses, state.winnersCount))
             .then(winnersArray => {
                 setWinners(winnersArray)
+                console.log('hola')
                 setLoading(false)
             })      
     }, [])

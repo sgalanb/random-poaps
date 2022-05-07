@@ -5,7 +5,7 @@ import Navbar from "../../containers/Navbar/Navbar";
 
 export default function Home() {
     return (
-        <div className="HomeContainer">
+        <div className="HomeContainer page">
           <Navbar type='social' />
           <h1 className='randomPoapsTitle' >Random POAPs</h1>
           <h2 className="randomPoapsDescription"> Create raffles between POAP token holders. No sign up required. </h2>

@@ -3,6 +3,9 @@
 
 * {
     font-family: 'Roboto Condensed', sans-serif;
-    background-color: #000001;
     color: #fff;
+}
+
+.page {
+    background-color: #000001;
 }

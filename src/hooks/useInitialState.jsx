@@ -3,6 +3,7 @@ import { useState } from "react";
 const initialState = {
     listOfIDs: [],
     winnersCount: 1,
+    totalAddresses: [],
 }
 
 const useInitialState = () => {
@@ -29,11 +30,19 @@ const useInitialState = () => {
         })
     }
 
+    const setTotalAddresses = (payload) => {
+        setState({
+            ...state,
+            totalAddresses: payload
+        })
+    }
+
     return {
         state,
         addID,
         removeID,
-        setContextWinners
+        setContextWinners,
+        setTotalAddresses
     }
 }
 

@@ -7,7 +7,7 @@ import NavArrows from '../../components/NavArrows/NavArrows'
 
 export default function NumberOfWinners() {   
     return (
-        <div className='numberOfWinnersContainer'>
+        <div className='numberOfWinnersContainer page'>
             <Navbar />
             <NavArrows backPath={'/poaps'} nextPath={'/ready'} />
             <Heading2 text={'Select the number of winners'} />

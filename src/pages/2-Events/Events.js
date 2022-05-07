@@ -11,7 +11,7 @@ export default function Events() {
     const { state } = useContext(IdContext)
 
     return (
-      <div className='eventsContainer'>
+      <div className='eventsContainer page'>
         <Navbar />
         <NavArrows nextPath={state.listOfIDs.length == 0 ? '/poaps' : 'number-of-winners'} rightArrowFunction={() => {
           if (state.listOfIDs.length == 0) {alert('Add at least 1 event')}
