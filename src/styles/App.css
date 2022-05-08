@@ -6,6 +6,6 @@
     color: #fff;
 }
 
-.page {
+html, .page {
     background-color: #000001;
 }
