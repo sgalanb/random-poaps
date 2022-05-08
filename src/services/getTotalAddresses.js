@@ -11,8 +11,8 @@ export const getTotalAddresses = (ids) => {
     const json = (response) =>
       Promise.all(
         response.map((response) => {
-          if (response.ok) return response.json()
-          throw new Error(response.error_code)
+          if (response.ok) { return response.json() }
+          else { throw new Error(response.statusCode) }
         })
       )
     
