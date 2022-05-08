@@ -25,3 +25,9 @@
     text-shadow: 0px 0px 25px #fff;
     box-shadow: 0px 0px 15px #6534FF;
 }
+
+@media (max-width: 802px) {
+    .button-primary {
+        margin-bottom: 0px;
+    }
+}

@@ -1,4 +1,4 @@
-.Navbar {
+.navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -32,4 +32,11 @@
 
 .faq:hover {
     opacity: 80%;
+}
+
+@media (max-width: 802px) {
+    .navbar {
+        padding-bottom: 25px;
+        background-color: #000001;
+    }
 }

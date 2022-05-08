@@ -22,14 +22,16 @@ export default function WinnersList() {
     }, [])
 
     return (
-        <div className='winnersListContainer' >
+        <>
             {loading 
                 ? (<Spinner />)  
                 : (
-                    winners.map(address =>
-                    <SingleWinner key={winners.indexOf(address)} number={winners.indexOf(address) + 1} address={address}/>)
+                    <div className={`winnersListContainer ${state.winnersCount > 8 ? 'overflow' : ''}`} >
+                        {winners.map(address =>
+                        <SingleWinner key={winners.indexOf(address)} number={winners.indexOf(address) + 1} address={address}/>)}
+                    </div>
                 )
             }
-        </div>
+        </>
     )
 }

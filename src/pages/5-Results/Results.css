@@ -1,4 +1,4 @@
-.WinnersContainer {
+.winnersContainer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,4 +10,12 @@
     align-items: center;
     justify-content: center;
     gap: 25px;
+}
+
+@media (max-width: 802px) {
+    .nav-buttons {
+        width: 80%;
+        flex-direction: column;
+        margin-bottom: 20%;
+    }
 }

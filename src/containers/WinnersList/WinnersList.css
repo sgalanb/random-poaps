@@ -4,13 +4,15 @@
     flex-direction: column;
     margin-bottom: 25px;
     max-height: 500px;
-    overflow-y: scroll;
-    scrollbar-width: none;
 }
 
 .winnersListContainer::-webkit-scrollbar {
     width: 0;
     height: 0;
+}
+
+.overflow {
+    overflow-y: scroll;
 }
 
 #scrollbar {
@@ -20,4 +22,12 @@
 #scrollbar::-webkit-scrollbar {
     width: auto;
     height: auto;
+}
+
+@media (max-width: 802px) {
+    .winnersListContainer {
+        width: 80%;
+        overflow-x: scroll;
+        max-height: 35%;
+    }
 }
