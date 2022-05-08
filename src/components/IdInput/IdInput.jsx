@@ -9,14 +9,18 @@ export default function IdInput() {
     const handleSubmit = evt => {
         evt.preventDefault()
         const repeated = state.listOfIDs.find(element => element == id)
-        if (repeated) {
-            alert(`Event already added`)
-        } if (!id == '') {
-            addID(id)
-            setId('')
+        if (id == '') {
+            alert(`Add an event ID.`)
+        } else {
+            if (repeated) {
+                alert(`Event already added`)
+            } else {
+                addID(id)
+                setId('')
+            }
         }
     }
-
+        
     const handleChange = evt => {
         setId(evt.target.value);
     }

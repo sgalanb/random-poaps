@@ -3,7 +3,7 @@
     grid-template-columns: 2fr;
     align-items: center;
     width: 45rem;
-    margin: 1rem;
+    margin-bottom: 1rem;
 }
 
 .eventIdInput {
