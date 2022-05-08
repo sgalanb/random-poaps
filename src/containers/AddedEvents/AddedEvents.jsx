@@ -8,7 +8,7 @@ export default function AddedEvents() {
 
     return (
         <div className='addedEventsGrid'>
-            { state.listOfIDs.map(id => <SingleEvent key={id} id={id}/> )}
+            {state.listOfIDs.map( id => <SingleEvent key={id} id={id}/> )}
         </div>
     )
 }

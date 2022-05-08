@@ -11,7 +11,7 @@ export default function IdInput() {
         const repeated = state.listOfIDs.find(element => element == id)
         if (repeated) {
             alert(`Event already added`)
-        } else {
+        } if (!id == '') {
             addID(id)
             setId('')
         }

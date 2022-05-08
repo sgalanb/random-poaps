@@ -1,23 +1,48 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import './SingleEvent.css'
-import GetEventInfo from '../../hooks/useEventInfo';
 import IdContext from '../../context/IdContext';
+import { getEventInfo } from '../../services/getEventInfo';
 
 export default function SingleEvent({id}) {
     const {removeID} = useContext(IdContext)
-    let [eventName, eventImg] = GetEventInfo(id)
+    const [loading, setLoading] = useState(true)
+    const [eventData, setEventData] = useState({})
     
-    if (eventImg === undefined) {
-        eventImg = 'https://i.imgur.com/QluOzUp.png'
-    }
-    if (eventName === undefined) {
-        eventName = `#${id}`
-    }
-
+    useEffect(() => {
+      getEventInfo(id)
+        .then(data => {
+            setEventData(data)
+            setLoading(false)
+        })
+        .catch(error => {
+            const errorCode = error.message
+            if (errorCode == 404) {
+                alert(`There's no events with this ID: #${id}`)
+                removeID(id)
+            } else {
+                alert(`Error with POAP api.`)
+            }
+        })
+    }, [])
+    
+ 
     return (
-        <div className='singleEventContainer'>
-            <img className='eventImg' src={eventImg} onClick={() => removeID(id)} />
-            <p className='eventName'>{`${eventName}`}</p>
+        <div className='singleEventContainer' >
+            {loading
+                ? (
+                    <>
+                    <div className='event-placeholder ph-image'></div>
+                    <div className='event-placeholder ph-name'></div>
+                    <div className='event-placeholder ph-name'></div>
+                    </>
+                )
+                : (
+                    <>
+                    <img className='eventImg' src={eventData.image} onClick={() => removeID(id)} />
+                    <p className='eventName'>{`${eventData.name}`}</p>
+                    </>
+                )
+            }
         </div>        
     )
 }
