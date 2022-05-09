@@ -4,6 +4,7 @@ const initialState = {
     listOfIDs: [],
     winnersCount: 1,
     totalAddresses: [],
+    faqActive: false
 }
 
 const useInitialState = () => {
@@ -37,12 +38,20 @@ const useInitialState = () => {
         })
     }
 
+    const setFaqActive = (payload) => {
+        setState({
+            ...state,
+            faqActive: payload
+        })
+    }
+
     return {
         state,
         addID,
         removeID,
         setContextWinners,
-        setTotalAddresses
+        setTotalAddresses,
+        setFaqActive
     }
 }
 

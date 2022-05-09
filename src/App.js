@@ -1,11 +1,11 @@
 import React from 'react';
 import './styles/App.css';
 import { Route, Switch } from "wouter"
+import useInitialState from './hooks/useInitialState';
 import Home from './pages/1-Home/Home';
 import Events from './pages/2-Events/Events';
 import NumberOfWinners from './pages/3-NumberOfWinners/NumberOfWinners';
 import IdContext from './context/IdContext';
-import useInitialState from './hooks/useInitialState';
 import Ready from './pages/4-Ready/Ready';
 import Results from './pages/5-Results/Results'
 
