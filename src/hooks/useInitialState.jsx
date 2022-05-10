@@ -45,13 +45,18 @@ const useInitialState = () => {
         })
     }
 
+    const setInitialState = () => {
+        setState(initialState)
+    }
+
     return {
         state,
         addID,
         removeID,
         setContextWinners,
         setTotalAddresses,
-        setFaqActive
+        setFaqActive,
+        setInitialState
     }
 }
 
