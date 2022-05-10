@@ -8,13 +8,13 @@
     justify-content: center;
     flex-direction: column;
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.6)
+    background-color: rgba(0, 0, 0, 0.8)
 
 }
 
 .faqContainer {
-    width: 50em;
-    height: 30em;
+    width: 45%;
+    height: 60%;
     border: 10px solid;
     border-color: #6534FF;
     border-radius: 25px;
@@ -26,6 +26,24 @@
     font-size: 4rem;
     font-weight: bold;
     text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+.questions-container {
+    height: 85%;
+    overflow-y: scroll;
+}
+
+.questions-container::-webkit-scrollbar {
+    background-color: #161616;
+    border-radius: 5px;
+    width: 10px;
+}
+
+.questions-container::-webkit-scrollbar-thumb {
+    background-color: rgb(72, 72, 72);
+    border-radius: 5px;
 }
 
 .ask {
@@ -37,6 +55,27 @@
     font-weight: 400;
 }
 
+.close {
+    display: none;
+    font-size: 2rem;
+    font-weight: boldz;
+    position: absolute;
+    top: 8.5%;
+    right: 17.5%;
+    cursor: pointer;
+}
+
 .active {
         display: flex;
+}
+
+@media (max-width: 802px) {
+    .faqContainer {
+        width: 65%;
+        height: 75%;
+    }
+    
+    .close {
+        display: flex;
+    }
 }
