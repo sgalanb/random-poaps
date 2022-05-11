@@ -1,4 +1,4 @@
-.eventIdForm {
+.IdInputForm {
     display: grid;
     grid-template-columns: 2fr;
     align-items: center;
@@ -6,66 +6,58 @@
     margin-bottom: 1rem;
 }
 
-.eventIdInput {
+.IdInputInput {
     text-decoration: none;
     font-size: 1.75rem;
     font-weight: 400;
     color: #000001;
-    width: 45rem;
+    width: 40rem;
     height: 4rem;
     box-sizing: border-box;
     border-width: 3px;
-    border-radius: 25px;
+    border-radius: 25px 0 0 25px;
     border-color: #fff;
     border-style: solid; 
     background-color: #fff;
     padding-left: 20px;
 }
 
-.eventIdInput:focus {
+.IdInputInput:focus {
     border-color: #6534FF;
     outline: none;
 }
 
-.eventIdInput::placeholder {
+.IdInputInput::placeholder {
     font-size: 1.75rem;
 }
 
-.eventIdDiv {
+.IdInputButton {
     grid-column-start: 2;
     width: 5rem;
     height: 4rem;
     display: flex;
+    align-items: center;
     justify-content: center;
-    flex-direction: column;
     background-color: #6534FF;
     border: none;
     border-radius: 0 25px 25px 0;
-    margin-left: -80px;
-    text-decoration: none;
-    font-size: 2rem;
-    font-weight: bold;
-    color: #fff;
     cursor: pointer;
 }
 
-.EventIdP {
-    text-align: center;
-    font-size: 1.75rem;
+.IdInputADD {
+    font-size: 2rem;
     font-weight: bold;
     letter-spacing: 0.5px;
-    color: #000001;
-    background-color: transparent;
-    margin: 0px;
+    color: #fff;
     user-select: none;
 }
 
 @media (max-width: 802px) {
-    .eventIdForm {
+    .IdInputForm {
         width: 90%;
     }
 
-    .eventIdInput {
-        width: 95%;
+    .IdInputInput {
+        width: 100%;
     }
 }
