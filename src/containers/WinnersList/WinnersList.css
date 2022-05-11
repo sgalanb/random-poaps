@@ -7,27 +7,25 @@
 }
 
 .winnersListContainer::-webkit-scrollbar {
-    width: 0;
-    height: 0;
+    background-color: #161616;
+    border-radius: 5px;
+    width: 10px;
+    height: 10px;
+}
+
+.winnersListContainer::-webkit-scrollbar-thumb {
+    background-color: rgb(72, 72, 72);
+    border-radius: 5px;
 }
 
 .overflow {
     overflow-y: scroll;
 }
 
-#scrollbar {
-    scrollbar-width: auto;
-}
-
-#scrollbar::-webkit-scrollbar {
-    width: auto;
-    height: auto;
-}
-
 @media (max-width: 802px) {
     .winnersListContainer {
         width: 80%;
-        overflow-x: scroll;
-        max-height: 35%;
+        overflow: scroll;
+        max-height: 40%;
     }
 }
