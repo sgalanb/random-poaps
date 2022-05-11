@@ -13,8 +13,8 @@
 }
 
 .faqContainer {
-    width: 45%;
-    height: 60%;
+    width: 50rem;
+    height: 35rem;
     border: 10px solid;
     border-color: #6534FF;
     border-radius: 25px;
@@ -26,12 +26,11 @@
     font-size: 4rem;
     font-weight: bold;
     text-align: center;
-    margin-top: 1rem;
-    margin-bottom: 0;
+    margin: auto;
 }
 
 .questions-container {
-    height: 85%;
+    height: 30rem;
     overflow-y: scroll;
 }
 
@@ -58,10 +57,9 @@
 .close {
     display: none;
     font-size: 2rem;
-    font-weight: boldz;
-    position: absolute;
-    top: 8.5%;
-    right: 17.5%;
+    position: fixed;
+    top: 15%;
+    right: 15%;
     cursor: pointer;
 }
 
@@ -71,8 +69,7 @@
 
 @media (max-width: 802px) {
     .faqContainer {
-        width: 65%;
-        height: 75%;
+        width: 80%;
     }
     
     .close {
