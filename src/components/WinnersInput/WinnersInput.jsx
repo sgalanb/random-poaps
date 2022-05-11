@@ -19,6 +19,10 @@ export default function WinnersInput() {
             .then((totalAddresses) => {
                 setTotalAddresses(totalAddresses)
                 setAddressesLength(totalAddresses.length)
+                if (totalAddresses.length < winners) {
+                    setContextWinners(1)
+                    setWinners(1)
+                }
                 setLoading(false)
             })
     }, [])
