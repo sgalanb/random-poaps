@@ -44,32 +44,29 @@ export default function WinnersInput() {
             setWinners(parseInt(winners) -1)
         }
     }
-
-    const handleSubmit = (evt) => {
-        setContextWinners(parseInt(winners))
-        evt.preventDefault()
-    }
     
     return (
         <>
         {loading 
             ? (<Spinner />) 
             : (
-                <form className="winnersInputForm" onSubmit={handleSubmit} >
-                    <div className="winnersInputInput"> {winners} </div>
-                    <div className="WinnersInputDivBox">
-                        <div className="WinnersInputDivPlus" onClick={handlePlus}>
-                            <div className="WinnersInputSVGPlusContainer">
+                <div className="winnersInputContainer" >
+                    <div className="winnersInputDivNumber" >
+                        <p className="winnersNumber" >{winners} </p> 
+                    </div>
+                    <div className="WinnersInputDivPlusMinus" >
+                        <div className="WinnersInputDivPlus" onClick={handlePlus} >
+                            <div className="WinnersInputSVGPlusContainer" >
                                 <PlusSolid className="WinnersInputSVGPlus" />
                             </div>
                         </div>
-                        <div className="WinnersInputDivMinus" onClick={handleMinus}>
-                            <div className="WinnersInputSVGMinusContainer">
+                        <div className="WinnersInputDivMinus" onClick={handleMinus} >
+                            <div className="WinnersInputSVGMinusContainer" >
                                 <MinusSolid className="WinnersInputSVGMinus" />
                             </div>
                         </div>
                     </div>        
-                </form>
+                </div>
             )
         }
         </>

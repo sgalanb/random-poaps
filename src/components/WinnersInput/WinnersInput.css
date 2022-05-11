@@ -1,39 +1,34 @@
-.winnersInputForm {
+.winnersInputContainer {
     display: grid;
     grid-template-columns: 2fr;
     align-items: center;
-    width: 12rem;
+    width: 10rem;
     height: 4rem;
     margin-bottom: 68px;
 }
 
-.winnersInputInput{
-    text-decoration: none;
-    font-size: 1.75rem;
-    font-weight: 400;
-    width: 12rem;
+.winnersInputDivNumber {
+    display: flex;
+    width: 8rem;
     height: 4rem;
-    color: #000001;
-    box-sizing: border-box;
-    border-width: 3px;
-    border-radius: 25px;
-    border-color: #fff;
-    border-style: solid; 
+    border-radius: 25px 0 0 25px;
     background-color: #fff;
-    padding-right: 20px;
-    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
-.winnersInputInput:focus {
-    border-color: #6534FF;
-    outline: none;
+.winnersNumber {
+    font-size: 1.75rem;
+    font-weight: 400;
+    color: #000001;
+    user-select: none;
 }
 
 .winnersInputInput::placeholder {
     font-size: 1.75rem;
 }
 
-.WinnersInputDivBox {
+.WinnersInputDivPlusMinus {
     grid-column-start: 2;
     display: flex;
     flex-direction: column;
@@ -48,7 +43,6 @@
     height: 2rem;
     background-color: #6534FF;
     border-radius: 0 25px 0 0;
-    margin-left: -46px;
 }
 
 .WinnersInputDivMinus {
@@ -57,7 +51,14 @@
     flex-direction: column;
     background-color: #6534FF;
     border-radius: 0 0 25px 0;
-    margin-left: -46px;
+}
+
+.WinnersInputDivPlus:hover, .WinnersInputDivMinus:hover {
+    opacity: 0.8;
+}
+
+.WinnersInputDivPlus:active, .WinnersInputDivMinus:active {
+    opacity: 0.6;
 }
 
 .WinnersInputSVGPlus  {
