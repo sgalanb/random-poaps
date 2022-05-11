@@ -1,6 +1,7 @@
 import React, {useContext, useState} from "react";
 import './IdInput.css'
 import IdContext from "../../context/IdContext";
+import { toast } from 'react-toastify';
 
 export default function IdInput() {
     const { addID, state } = useContext(IdContext)
@@ -10,10 +11,10 @@ export default function IdInput() {
         evt.preventDefault()
         const repeated = state.listOfIDs.find(element => element == id)
         if (id == '') {
-            alert(`Add an event ID.`)
+            toast.info('Enter an event ID')
         } else {
             if (repeated) {
-                alert(`Event already added`)
+                toast.info('Event already added')
             } else {
                 addID(id)
                 setId('')

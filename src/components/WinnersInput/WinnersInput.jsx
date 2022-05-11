@@ -5,6 +5,7 @@ import { ReactComponent as PlusSolid } from '../../images/plus-solid.svg';
 import IdContext from "../../context/IdContext";
 import { getTotalAddresses } from "../../services/getTotalAddresses";
 import { Spinner } from "../Spinner/Spinner";
+import { toast } from 'react-toastify';
 
 export default function WinnersInput() {
     const { setContextWinners, setTotalAddresses, state } = useContext(IdContext)
@@ -27,13 +28,13 @@ export default function WinnersInput() {
     }
 
     const handlePlus = () => {
-        if (winners + 1 < addressesLength) {
+        if (winners < addressesLength) {
             setContextWinners(parseInt(winners) + 1)
             setWinners(parseInt(winners) + 1)
         } else {
-            alert("The number of winners is equal to the number of participants")
-            setWinners(addressesLength - 1)
-            setContextWinners(addressesLength - 1)
+            toast.info('The number of winners is equal to the number of participants')
+            setWinners(addressesLength)
+            setContextWinners(addressesLength)
         }
     }
 

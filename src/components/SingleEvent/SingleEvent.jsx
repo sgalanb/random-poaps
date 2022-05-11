@@ -2,6 +2,7 @@ import React, { useContext, useState, useEffect } from 'react';
 import './SingleEvent.css'
 import IdContext from '../../context/IdContext';
 import { getEventInfo } from '../../services/getEventInfo';
+import { toast } from 'react-toastify';
 
 export default function SingleEvent({id}) {
     const {removeID} = useContext(IdContext)
@@ -17,10 +18,10 @@ export default function SingleEvent({id}) {
         .catch(error => {
             const errorCode = error.message
             if (errorCode == 404) {
-                alert(`There's no events with this ID: #${id}`)
+                toast.warning(`There's no events with this ID: #${id}`)
                 removeID(id)
             } else {
-                alert(`Error with POAP api.`)
+                toast.warning('Error with POAP API.')
             }
         })
     }, [])

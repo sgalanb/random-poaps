@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
-
 * {
     font-family: 'Roboto Condensed', sans-serif;
     color: #fff;
@@ -8,4 +7,16 @@
 
 html, .page {
     background-color: #000001;
+}
+
+.Toastify__toast {
+    --toastify-icon-color-info: #fff;
+    --toastify-color-dark: #6534FF;
+    border-radius: 10px !important;
+}
+
+@media (max-width: 802px) {
+    .Toastify__toast {
+        border-radius: 0 !important;
+    }
 }
