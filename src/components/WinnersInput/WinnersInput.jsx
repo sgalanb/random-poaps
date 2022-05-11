@@ -27,10 +27,6 @@ export default function WinnersInput() {
             })
     }, [])
 
-    const handleChange = evt => {
-        setWinners(evt.target.value);
-    }
-
     const handlePlus = () => {
         if (winners < addressesLength) {
             setContextWinners(parseInt(winners) + 1)
@@ -60,7 +56,7 @@ export default function WinnersInput() {
             ? (<Spinner />) 
             : (
                 <form className="winnersInputForm" onSubmit={handleSubmit} >
-                    <input className="winnersInputInput" type='number' disabled min={1} max={addressesLength} onChange={handleChange} value={winners} placeholder='Winners'/>
+                    <div className="winnersInputInput"> {winners} </div>
                     <div className="WinnersInputDivBox">
                         <div className="WinnersInputDivPlus" onClick={handlePlus}>
                             <div className="WinnersInputSVGPlusContainer">
