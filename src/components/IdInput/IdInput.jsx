@@ -28,7 +28,7 @@ export default function IdInput() {
 
     return (
         <form name="IdInputForm" className="IdInputForm" onSubmit={handleSubmit}>
-            <input className="IdInputInput" type='number' min={1} onChange={handleChange} value={id} placeholder='Event ID' />
+            <input className="IdInputInput" onChange={handleChange} value={id} placeholder='Event ID' />
             <button className="IdInputButton" >
                 <p className="IdInputADD">ADD</p>
             </button>
