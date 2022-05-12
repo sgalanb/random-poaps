@@ -14,9 +14,9 @@ export default function Faq() {
 
                 <div className='questions-container'>
                     <h3 className='ask'>🔽 Where can I find events IDs?</h3>
-                    <p className='response'>You can browse all poaps and their IDs at the <a target="_blank" rel="noopener noreferrer" href="https://poap.gallery/">official galery</a>.</p>
+                    <p className='response'>You can find all the created events and their IDs in the <a target="_blank" rel="noopener noreferrer" href="https://poap.gallery/">official gallery</a>.</p>
 
-                    <h3 className='ask'>🔽 How do winners prove the ownership of their address?</h3>
+                    <h3 className='ask'>🔽 How can winners prove ownership of their address?</h3>
                     <p className='response'>Winners can sign a message with their address at <a target="_blank" rel="noopener noreferrer" href="https://app.mycrypto.com/sign-message">this site</a>. Organizers can verify the signature <a target="_blank" rel="noopener noreferrer" href="https://app.mycrypto.com/verify-message">here.</a> </p>
 
                     <h3 className='ask'>🔽 Is there any technical limitation?</h3>
