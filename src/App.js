@@ -12,7 +12,6 @@ import Ready from './pages/4-Ready/Ready';
 import Results from './pages/5-Results/Results'
 import NotFound from './pages/NotFound/NotFound'
 
-
 function App() {
   
   const initialState = useInitialState()
