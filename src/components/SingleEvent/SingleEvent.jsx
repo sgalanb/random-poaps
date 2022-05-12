@@ -22,6 +22,7 @@ export default function SingleEvent({id}) {
                 removeID(id)
             } else {
                 toast.warning('Error with POAP API.')
+                removeID(id)
             }
         })
     }, [])

@@ -10,6 +10,7 @@ import NumberOfWinners from './pages/3-NumberOfWinners/NumberOfWinners';
 import IdContext from './context/IdContext';
 import Ready from './pages/4-Ready/Ready';
 import Results from './pages/5-Results/Results'
+import NotFound from './pages/NotFound/NotFound'
 
 
 function App() {
@@ -20,11 +21,11 @@ function App() {
     <IdContext.Provider value={initialState}>
       <Switch>
         <Route component={Home} path='/' />
-        <Route component={Events} path='/poaps' />
+        <Route component={Events} path='/add-events' />
         <Route component={NumberOfWinners} path='/number-of-winners' />
         <Route component={Ready} path='/ready' />
         <Route component={Results} path='/results' />
-        <Route component={Home} />
+        <Route component={NotFound} />
       </Switch>
       <ToastContainer position="bottom-center" autoClose={2000} theme='dark' closeButton='' newestOnTop hideProgressBar />
     </IdContext.Provider>

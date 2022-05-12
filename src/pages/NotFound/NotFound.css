@@ -1,0 +1,11 @@
+.notFoundContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.notFoundText {
+    font-size: 2rem;
+    margin-top: 0;
+}
