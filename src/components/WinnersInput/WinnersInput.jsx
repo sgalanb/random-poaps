@@ -28,13 +28,11 @@ export default function WinnersInput() {
     }, [])
 
     const handlePlus = () => {
-        if (winners < addressesLength) {
+        if (winners < addressesLength - 1) {
             setContextWinners(parseInt(winners) + 1)
             setWinners(parseInt(winners) + 1)
         } else {
             toast.info('The number of winners is equal to the number of participants')
-            setWinners(addressesLength)
-            setContextWinners(addressesLength)
         }
     }
 
