@@ -9,12 +9,6 @@ export default function Home() {
         <div className="HomeContainer page">
             <Helmet>
                 <title>Home | Random POAPs</title>
-                <meta name="description" content="Create raffles between POAP token holders. No sign up required." />
-                <meta name="twitter:card" content="summary" />
-                <meta name="twitter:site" content="@sgalanb" />
-                <meta name="twitter:title" content="Random POAPs" />
-                <meta name="twitter:description" content="Create raffles between POAP token holders. No sign up required." />
-                <meta name="twitter:image" content="https://imgur.com/a/oxiYw5y" />
             </Helmet>
 
             <Navbar type='social' />
