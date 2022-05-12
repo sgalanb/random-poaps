@@ -9,8 +9,7 @@ export default function Faq() {
     return (
         <div className={`background ${state.faqActive ? 'active' : 'disabled'}`} onClick={() => {setFaqActive(false)}}>
             <div className='faqContainer' onClick={handleContainerClick}>
-
-                <p className='close' onClick={()=>setFaqActive(false)}>X</p>
+            
                 <h2 className='faq-title'>F.A.Q.</h2>
 
                 <div className='questions-container'>

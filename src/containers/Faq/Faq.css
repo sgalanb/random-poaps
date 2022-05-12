@@ -14,7 +14,7 @@
 
 .faqContainer {
     width: 50rem;
-    height: 35rem;
+    height: 30rem;
     border: 10px solid;
     border-color: #6534FF;
     border-radius: 25px;
@@ -30,7 +30,7 @@
 }
 
 .questions-container {
-    height: 30rem;
+    height: 25rem;
     overflow-y: scroll;
 }
 
@@ -54,15 +54,6 @@
     font-weight: 400;
 }
 
-.close {
-    display: none;
-    font-size: 2rem;
-    position: fixed;
-    top: 15%;
-    right: 15%;
-    cursor: pointer;
-}
-
 .active {
         display: flex;
 }
@@ -70,9 +61,5 @@
 @media (max-width: 802px) {
     .faqContainer {
         width: 80%;
-    }
-    
-    .close {
-        display: flex;
     }
 }
