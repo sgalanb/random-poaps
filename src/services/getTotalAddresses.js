@@ -31,7 +31,8 @@ export const getTotalAddresses = (ids) => {
             })
         )
 
-    const mapArrayOfResponses = (response) => response.map((object) => object.tokens.map((token) => token.owner.id))
+    const mapArrayOfResponses = (response) => response.map((object) => object.tokens.map((token) =>
+        (token.owner.ens) ? token.owner.ens : token.owner.id))
 
     const concatArrays = (response) => response.reduce((acc, av) => acc.concat(av), [])
   
