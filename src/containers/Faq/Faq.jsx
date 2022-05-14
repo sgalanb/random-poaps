@@ -19,8 +19,8 @@ export default function Faq() {
                     <h3 className='ask'>🔽 How can winners prove ownership of their address?</h3>
                     <p className='response'>Winners can sign a message with their address at <a target="_blank" rel="noopener noreferrer" href="https://app.mycrypto.com/sign-message">this site</a>. Organizers can verify the signature <a target="_blank" rel="noopener noreferrer" href="https://app.mycrypto.com/verify-message">here.</a> </p>
 
-                    <h3 className='ask'>🔽 Is there any technical limitation?</h3>
-                    <p className='response'> The only limitation is that events with a supply of +300 poaps are not supported (yet).</p>
+                    <h3 className='ask'>🔽 Is there any limitation?</h3>
+                    <p className='response'> Events with a supply of +5000 poaps are not supported due to POAP API limitations.</p>
                 </div>
 
             </div>
