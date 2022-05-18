@@ -1,8 +1,9 @@
 import React from "react";
-import './Home.css'
-import ButtonPrimary from '../../components/ButtonPrimary/ButtonPrimary';
-import Navbar from "../../containers/Navbar/Navbar";
 import {Helmet} from 'react-helmet'
+import './Home.css'
+
+import ButtonPrimary from 'components/ButtonPrimary/ButtonPrimary';
+import Navbar from "containers/Navbar/Navbar";
 
 export default function Home() {
     return (

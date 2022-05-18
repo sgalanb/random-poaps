@@ -1,7 +1,8 @@
 import React, {useContext} from 'react';
 import './AddedEvents.css'
-import SingleEvent from '../../components/SingleEvent/SingleEvent';
-import IdContext from '../../context/IdContext';
+
+import IdContext from 'context/IdContext';
+import SingleEvent from 'components/SingleEvent/SingleEvent';
 
 export default function AddedEvents() {
     const { state } = useContext(IdContext)

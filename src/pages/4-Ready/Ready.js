@@ -1,10 +1,11 @@
 import React from 'react';
-import './Ready.css'
-import Navbar from '../../containers/Navbar/Navbar';
-import NavArrows from '../../components/NavArrows/NavArrows';
-import Heading2 from '../../components/Heading2/Heading2';
-import ButtonPrimary from '../../components/ButtonPrimary/ButtonPrimary'
 import {Helmet} from 'react-helmet'
+import './Ready.css'
+
+import Navbar from 'containers/Navbar/Navbar';
+import Heading2 from 'components/Heading2/Heading2';
+import ButtonPrimary from 'components/ButtonPrimary/ButtonPrimary'
+import NavArrows from 'components/NavArrows/NavArrows';
 
 
 export default function Ready() {

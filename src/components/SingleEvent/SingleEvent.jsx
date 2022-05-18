@@ -1,8 +1,9 @@
 import React, { useContext, useState, useEffect } from 'react';
-import './SingleEvent.css'
-import IdContext from '../../context/IdContext';
-import { getEventInfo } from '../../services/getEventInfo';
 import { toast } from 'react-toastify';
+import './SingleEvent.css'
+
+import IdContext from 'context/IdContext';
+import { getEventInfo } from 'services/getEventInfo';
 
 export default function SingleEvent({id}) {
     const {removeID} = useContext(IdContext)

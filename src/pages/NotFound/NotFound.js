@@ -1,8 +1,9 @@
 import React from 'react';
+import {Helmet} from 'react-helmet'
 import './NotFound.css'
+
 import Heading2 from '../../components/Heading2/Heading2';
 import ButtonPrimary from '../../components/ButtonPrimary/ButtonPrimary'
-import {Helmet} from 'react-helmet'
 
 
 export default function Ready() {

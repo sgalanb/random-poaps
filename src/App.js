@@ -1,16 +1,17 @@
 import React from 'react';
-import './styles/App.css';
-import 'react-toastify/dist/ReactToastify.css';
 import { Route, Switch } from "wouter"
 import { ToastContainer } from 'react-toastify';
-import useInitialState from './hooks/useInitialState';
-import Home from './pages/1-Home/Home';
-import Events from './pages/2-Events/Events';
-import NumberOfWinners from './pages/3-NumberOfWinners/NumberOfWinners';
-import IdContext from './context/IdContext';
-import Ready from './pages/4-Ready/Ready';
-import Results from './pages/5-Results/Results'
-import NotFound from './pages/NotFound/NotFound'
+import 'react-toastify/dist/ReactToastify.css';
+import 'styles/App.css';
+
+import IdContext from 'context/IdContext';
+import useInitialState from 'hooks/useInitialState';
+import Home from 'pages/1-Home/Home';
+import Events from 'pages/2-Events/Events';
+import NumberOfWinners from 'pages/3-NumberOfWinners/NumberOfWinners';
+import Ready from 'pages/4-Ready/Ready';
+import Results from 'pages/5-Results/Results'
+import NotFound from 'pages/NotFound/NotFound'
 
 function App() {
   

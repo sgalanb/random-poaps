@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import './Faq.css'
-import IdContext from '../../context/IdContext'
+
+import IdContext from 'context/IdContext'
 
 export default function Faq() {
     const {state, setFaqActive} = useContext(IdContext)

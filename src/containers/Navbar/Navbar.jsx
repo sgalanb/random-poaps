@@ -1,10 +1,11 @@
 import React, { useContext } from 'react';
-import './Navbar.css'
-import home from '../../images/home.png'
-import NavbarSocial from '../../components/NavbarSocial/NavbarSocial'
 import { Link } from 'wouter';
-import Faq from '../Faq/Faq';
+import './Navbar.css'
+
 import IdContext from '../../context/IdContext'
+import home from 'images/home.png'
+import NavbarSocial from 'components/NavbarSocial/NavbarSocial'
+import Faq from 'components/Faq/Faq';
 
 export default function Navbar(type) {
     const {setFaqActive} = useContext(IdContext)

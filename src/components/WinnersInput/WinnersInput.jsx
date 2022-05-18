@@ -1,11 +1,12 @@
 import React, {useState, useContext, useEffect} from "react";
-import './WinnersInput.css'
-import { ReactComponent as MinusSolid } from '../../images/minus-solid.svg';
-import { ReactComponent as PlusSolid } from '../../images/plus-solid.svg';
-import IdContext from "../../context/IdContext";
-import { getTotalAddresses } from "../../services/getTotalAddresses";
-import { Spinner } from "../Spinner/Spinner";
 import { toast } from 'react-toastify';
+import './WinnersInput.css'
+
+import IdContext from "context/IdContext";
+import { ReactComponent as MinusSolid } from 'images/minus-solid.svg';
+import { ReactComponent as PlusSolid } from 'images/plus-solid.svg';
+import { getTotalAddresses } from "services/getTotalAddresses";
+import { Spinner } from "components/Spinner/Spinner";
 
 export default function WinnersInput() {
     const { setContextWinners, setTotalAddresses, state } = useContext(IdContext)

@@ -1,8 +1,9 @@
 import React from "react";
 import './NavbarSocial.css'
-import { ReactComponent as GitSVG } from '../../images/github-brands.svg'
-import { ReactComponent as TwitterSVG } from '../../images/twitter-brands.svg'
-import { ReactComponent as LinkedInSVG } from '../../images/linkedin-brands.svg'
+
+import { ReactComponent as GitSVG } from 'images/github-brands.svg'
+import { ReactComponent as TwitterSVG } from 'images/twitter-brands.svg'
+import { ReactComponent as LinkedInSVG } from 'images/linkedin-brands.svg'
 
 export default function Navbar() {
     

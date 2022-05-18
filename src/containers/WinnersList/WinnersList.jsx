@@ -1,9 +1,10 @@
 import React, { useState, useEffect, useContext } from 'react'
 import './WinnersList.css'
-import IdContext from '../../context/IdContext'
-import SingleWinner from '../../components/SingleWinner/SingleWinner'
-import { getWinners } from '../../services/getWinners'
-import { Spinner } from '../../components/Spinner/Spinner'
+
+import IdContext from 'context/IdContext'
+import { getWinners } from 'services/getWinners'
+import SingleWinner from 'components/SingleWinner/SingleWinner'
+import { Spinner } from 'components/Spinner/Spinner'
 
 export default function WinnersList() {
     const { state } = useContext(IdContext)

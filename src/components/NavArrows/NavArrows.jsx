@@ -1,7 +1,8 @@
 import React from 'react';
-import './NavArrows.css'
 import { Link } from 'wouter';
-import { ReactComponent as LeftArrow } from '../../images/arrow-solid.svg'
+import './NavArrows.css'
+
+import { ReactComponent as LeftArrow } from 'images/arrow-solid.svg'
 
 export default function NavArrows({backPath, nextPath, rightArrowFunction = () => {}, leftArrowFunction = () => {}}) {
 

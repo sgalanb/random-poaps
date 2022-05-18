@@ -1,10 +1,11 @@
 import React, { useContext } from 'react'
-import './Results.css'
-import Heading2 from '../../components/Heading2/Heading2'
-import WinnersList from '../../containers/WinnersList/WinnersList'
-import ButtonPrimary from '../../components/ButtonPrimary/ButtonPrimary'
-import IdContext from '../../context/IdContext'
 import {Helmet} from 'react-helmet'
+import './Results.css'
+
+import IdContext from 'context/IdContext'
+import Heading2 from 'components/Heading2/Heading2'
+import WinnersList from 'containers/WinnersList/WinnersList'
+import ButtonPrimary from 'components/ButtonPrimary/ButtonPrimary'
 
 export default function Winners() {
     const { setInitialState } = useContext(IdContext)

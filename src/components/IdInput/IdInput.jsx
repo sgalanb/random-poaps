@@ -1,7 +1,8 @@
 import React, {useContext, useState} from "react";
-import './IdInput.css'
-import IdContext from "../../context/IdContext";
 import { toast } from 'react-toastify';
+import './IdInput.css'
+
+import IdContext from "context/IdContext";
 
 export default function IdInput() {
     const { addID, state } = useContext(IdContext)
