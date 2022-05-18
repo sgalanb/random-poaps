@@ -15,7 +15,7 @@ html, .page {
     border-radius: 10px !important;
 }
 
-@media (max-width: 802px) {
+@media (max-width: 480px) {
     .Toastify__toast {
         border-radius: 0 !important;
     }

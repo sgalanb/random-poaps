@@ -9,6 +9,7 @@ import AddedEvents from 'containers/AddedEvents/AddedEvents';
 import Heading2 from 'components/Heading2/Heading2';
 import IdInput from 'components/IdInput/IdInput'
 import NavArrows from 'components/NavArrows/NavArrows';
+import Tip from 'components/Tip/Tip';
 
 export default function Events() {
     const { state } = useContext(IdContext)
@@ -26,6 +27,7 @@ export default function Events() {
             }} />
             <Heading2 text={'Add POAPs to the raffle'} />
             <IdInput />
+            <Tip text={'Tap an event to remove it'} />
             <AddedEvents />
         </div>
     )
