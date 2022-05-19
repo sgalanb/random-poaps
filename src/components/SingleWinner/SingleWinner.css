@@ -9,6 +9,7 @@
 
 .winner-number {
     margin: 0 10px 0 10px;
+    user-select: none;
 }
 
 .winner-address {
@@ -18,4 +19,21 @@
 
 .winner-address:hover {
     color: #6534FF;
+}
+
+.winner-address:active {
+    color: #3a0ec8;
+}
+
+.winner-copy {
+    margin: 0 10px 0 5px;
+    cursor: pointer;
+}
+
+.winner-copy:hover {
+    opacity: 80%;
+}
+
+.winner-copy:active {
+    opacity: 60%;
 }
