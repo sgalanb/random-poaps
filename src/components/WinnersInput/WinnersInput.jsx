@@ -2,14 +2,14 @@ import React, {useState, useContext, useEffect} from "react";
 import { toast } from 'react-toastify';
 import './WinnersInput.css'
 
-import IdContext from "context/IdContext";
+import RaffleContext from "context/RaffleContext";
 import { ReactComponent as MinusSolid } from 'images/minus-solid.svg';
 import { ReactComponent as PlusSolid } from 'images/plus-solid.svg';
 import { getTotalAddresses } from "services/getTotalAddresses";
 import { Spinner } from "components/Spinner/Spinner";
 
 export default function WinnersInput() {
-    const { setContextWinners, setTotalAddresses, state } = useContext(IdContext)
+    const { setContextWinners, setTotalAddresses, state } = useContext(RaffleContext)
     const [loading, setLoading] = useState(false)
     const [winners, setWinners] = useState(state.winnersCount)
     const [addressesLength, setAddressesLength] = useState(100000)

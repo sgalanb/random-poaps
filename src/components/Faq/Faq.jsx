@@ -1,10 +1,10 @@
 import React, { useContext } from 'react'
 import './Faq.css'
 
-import IdContext from 'context/IdContext'
+import RaffleContext from 'context/RaffleContext'
 
 export default function Faq() {
-    const {state, setFaqActive} = useContext(IdContext)
+    const {state, setFaqActive} = useContext(RaffleContext)
     const handleContainerClick = e => e.stopPropagation()
 
     return (
@@ -22,7 +22,7 @@ export default function Faq() {
 
                     <h3 className='ask'>🔽 What&apos;s the difference with poap.fun?</h3>
                     <p className='response'> The main difference is that people don&apos;t have to sign up for participate in the raffles.
-                    This has some disadvantages, like that raffles results are&apos;t stored anywhere, but it&apos;s perfect for quick hassle free raffles. </p>
+                    This has some disadvantages, like that raffles results aren&apos;t stored anywhere, but it&apos;s perfect for quick hassle free raffles. </p>
 
                     <h3 className='ask'>🔽 Is there any limitation?</h3>
                     <p className='response'> Events with a supply of +5000 poaps are not supported due to POAP API limitations.</p>

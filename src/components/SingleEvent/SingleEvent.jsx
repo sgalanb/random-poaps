@@ -2,11 +2,11 @@ import React, { useContext, useState, useEffect } from 'react';
 import { toast } from 'react-toastify';
 import './SingleEvent.css'
 
-import IdContext from 'context/IdContext';
+import RaffleContext from 'context/RaffleContext';
 import { getEventInfo } from 'services/getEventInfo';
 
 export default function SingleEvent({id}) {
-    const {removeID} = useContext(IdContext)
+    const {removeID} = useContext(RaffleContext)
     const [loading, setLoading] = useState(true)
     const [eventData, setEventData] = useState({})
     

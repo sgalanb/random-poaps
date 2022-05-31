@@ -1,13 +1,13 @@
 import React, { useState, useEffect, useContext } from 'react'
 import './WinnersList.css'
 
-import IdContext from 'context/IdContext'
+import RaffleContext from 'context/RaffleContext'
 import { getWinners } from 'services/getWinners'
 import SingleWinner from 'components/SingleWinner/SingleWinner'
 import { Spinner } from 'components/Spinner/Spinner'
 
 export default function WinnersList() {
-    const { state } = useContext(IdContext)
+    const { state } = useContext(RaffleContext)
     const [loading, setLoading] = useState(true)
     const [winners, setWinners] = useState([])
 

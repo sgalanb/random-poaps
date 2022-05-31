@@ -2,13 +2,13 @@ import React, { useContext } from 'react';
 import { Link } from 'wouter';
 import './Navbar.css'
 
-import IdContext from '../../context/IdContext'
+import RaffleContext from '../../context/RaffleContext'
 import home from 'images/home.png'
 import NavbarSocial from 'components/NavbarSocial/NavbarSocial'
 import Faq from 'components/Faq/Faq';
 
 export default function Navbar(type) {
-    const {setFaqActive} = useContext(IdContext)
+    const {setFaqActive} = useContext(RaffleContext)
 
     const selectedType = {type}
         if (selectedType.type.type == 'social') {

@@ -2,10 +2,10 @@ import React, {useContext, useState} from "react";
 import { toast } from 'react-toastify';
 import './IdInput.css'
 
-import IdContext from "context/IdContext";
+import RaffleContext from "context/RaffleContext";
 
 export default function IdInput() {
-    const { addID, state } = useContext(IdContext)
+    const { addID, state } = useContext(RaffleContext)
     const [id, setId] = useState('')
 
     const handleSubmit = evt => {

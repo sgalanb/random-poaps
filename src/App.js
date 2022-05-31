@@ -4,8 +4,8 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import 'styles/App.css';
 
-import IdContext from 'context/IdContext';
-import useInitialState from 'hooks/useInitialState';
+import RaffleContext from 'context/RaffleContext';
+import useRaffleInitialState from 'hooks/useRaffleInitialState';
 import Home from 'pages/1-Home/Home';
 import Events from 'pages/2-Events/Events';
 import NumberOfWinners from 'pages/3-NumberOfWinners/NumberOfWinners';
@@ -15,10 +15,10 @@ import NotFound from 'pages/NotFound/NotFound'
 
 function App() {
   
-  const initialState = useInitialState()
+  const RaffleInitialState = useRaffleInitialState()
 
   return (
-    <IdContext.Provider value={initialState}>
+    <RaffleContext.Provider value={RaffleInitialState}>
       <Switch>
         <Route component={Home} path='/' />
         <Route component={Events} path='/add-events' />
@@ -28,7 +28,7 @@ function App() {
         <Route component={NotFound} />
       </Switch>
       <ToastContainer position="bottom-center" autoClose={2000} theme='dark' closeButton='' newestOnTop hideProgressBar />
-    </IdContext.Provider>
+    </RaffleContext.Provider>
   );
 }
 

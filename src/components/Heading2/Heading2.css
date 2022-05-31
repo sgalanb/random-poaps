@@ -3,6 +3,7 @@
     font-weight: bold;
     text-align: center;
     margin: 68px 50px 50px 50px;
+    user-select: none;
 }
 
 @media (max-width: 802px) {

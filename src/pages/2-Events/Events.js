@@ -3,7 +3,7 @@ import { toast } from 'react-toastify';
 import {Helmet} from 'react-helmet'
 import './Events.css'
 
-import IdContext from 'context/IdContext';
+import RaffleContext from 'context/RaffleContext';
 import Navbar from 'containers/Navbar/Navbar';
 import AddedEvents from 'containers/AddedEvents/AddedEvents';
 import Heading2 from 'components/Heading2/Heading2';
@@ -12,7 +12,7 @@ import NavArrows from 'components/NavArrows/NavArrows';
 import Tip from 'components/Tip/Tip';
 
 export default function Events() {
-    const { state } = useContext(IdContext)
+    const { state } = useContext(RaffleContext)
 
     return (
         <div className='eventsContainer page'>
