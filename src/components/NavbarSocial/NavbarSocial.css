@@ -1,14 +1,14 @@
 .NavbarContainer {
-    display: grid;
-    grid-template-columns: 50px 50px 50px;
-    margin-left: 50px;
+  display: grid;
+  grid-template-columns: 50px 50px 50px;
+  margin-left: 50px;
 }
 
 .icon-links {
-    display: block;
-    width: 30px;
+  display: block;
+  width: 30px;
 }
 
 .icon-links:hover {
-    opacity: 80%;
+  opacity: 80%;
 }

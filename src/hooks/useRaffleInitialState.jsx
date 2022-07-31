@@ -1,63 +1,63 @@
-import { useState } from "react";
+import { useState } from 'react'
 
 const initialState = {
-    listOfIDs: [],
-    winnersCount: 1,
-    totalAddresses: [],
-    faqActive: false
+  listOfIDs: [],
+  winnersCount: 1,
+  totalAddresses: [],
+  faqActive: false,
 }
 
 const useInitialState = () => {
-    const [state, setState] = useState(initialState)
+  const [state, setState] = useState(initialState)
 
-    const addID = (payload) => {
-        setState({
-            ...state,
-            listOfIDs: [...state.listOfIDs, payload]
-        })
-    }
+  const addID = (payload) => {
+    setState({
+      ...state,
+      listOfIDs: [...state.listOfIDs, payload],
+    })
+  }
 
-    const removeID = (payload) => {
-        setState({
-            ...state,
-            listOfIDs: [...state.listOfIDs.filter(e => e !== payload)]
-        })
-    }
+  const removeID = (payload) => {
+    setState({
+      ...state,
+      listOfIDs: [...state.listOfIDs.filter((e) => e !== payload)],
+    })
+  }
 
-    const setContextWinners = (payload) => {
-        setState({
-            ...state,
-            winnersCount: payload 
-        })
-    }
+  const setContextWinners = (payload) => {
+    setState({
+      ...state,
+      winnersCount: payload,
+    })
+  }
 
-    const setTotalAddresses = (payload) => {
-        setState({
-            ...state,
-            totalAddresses: payload
-        })
-    }
+  const setTotalAddresses = (payload) => {
+    setState({
+      ...state,
+      totalAddresses: payload,
+    })
+  }
 
-    const setFaqActive = (payload) => {
-        setState({
-            ...state,
-            faqActive: payload
-        })
-    }
+  const setFaqActive = (payload) => {
+    setState({
+      ...state,
+      faqActive: payload,
+    })
+  }
 
-    const setInitialState = () => {
-        setState(initialState)
-    }
+  const setInitialState = () => {
+    setState(initialState)
+  }
 
-    return {
-        state,
-        addID,
-        removeID,
-        setContextWinners,
-        setTotalAddresses,
-        setFaqActive,
-        setInitialState
-    }
+  return {
+    state,
+    addID,
+    removeID,
+    setContextWinners,
+    setTotalAddresses,
+    setFaqActive,
+    setInitialState,
+  }
 }
 
 export default useInitialState

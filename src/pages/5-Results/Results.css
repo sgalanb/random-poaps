@@ -1,21 +1,21 @@
 .winnersContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .nav-buttons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
 }
 
 @media (max-width: 802px) {
-    .nav-buttons {
-        width: 80%;
-        flex-direction: column;
-        margin-bottom: 20%;
-    }
+  .nav-buttons {
+    width: 80%;
+    flex-direction: column;
+    margin-bottom: 20%;
+  }
 }

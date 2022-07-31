@@ -1,13 +1,13 @@
 .heading2 {
-    font-size: 4rem;
-    font-weight: bold;
-    text-align: center;
-    margin: 68px 50px 50px 50px;
-    user-select: none;
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 68px 50px 50px 50px;
+  user-select: none;
 }
 
 @media (max-width: 802px) {
-    .heading2 {
-        margin-top: 20%;
-    }
+  .heading2 {
+    margin-top: 20%;
+  }
 }

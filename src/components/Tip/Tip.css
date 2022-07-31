@@ -1,28 +1,28 @@
 .tip-container {
-    display: none;
-    width: 90%;
-    height: 2rem;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid;
-    border-radius: 12.5px;
-    flex-shrink: 0;
+  display: none;
+  width: 90%;
+  height: 2rem;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid;
+  border-radius: 12.5px;
+  flex-shrink: 0;
 }
 
 .tip-icon {
-    width: 15px;
-    height: 15px;
-    margin-right: 5px;
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
 }
 
 .tip-text {
-    font-size: 1rem;
-    text-align: center;
-    margin: 0;
+  font-size: 1rem;
+  text-align: center;
+  margin: 0;
 }
 
 @media (max-width: 802px) {
-    .tip-container {
-        display: flex;
-    }
+  .tip-container {
+    display: flex;
+  }
 }

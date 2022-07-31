@@ -1,6 +1,6 @@
 .eventsContainer {
-    display: flex;
-    align-items: center;
-    justify-content: top;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: top;
+  flex-direction: column;
 }

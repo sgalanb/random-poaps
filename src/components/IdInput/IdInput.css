@@ -1,63 +1,63 @@
 .IdInputForm {
-    display: grid;
-    grid-template-columns: 2fr;
-    align-items: center;
-    width: 45rem;
-    margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 2fr;
+  align-items: center;
+  width: 45rem;
+  margin-bottom: 1rem;
 }
 
 .IdInputInput {
-    text-decoration: none;
-    font-size: 1.75rem;
-    font-weight: 400;
-    color: #000001;
-    width: 40rem;
-    height: 4rem;
-    box-sizing: border-box;
-    border-width: 3px;
-    border-radius: 25px 0 0 25px;
-    border-color: #fff;
-    border-style: solid; 
-    background-color: #fff;
-    padding-left: 20px;
+  text-decoration: none;
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: #000001;
+  width: 40rem;
+  height: 4rem;
+  box-sizing: border-box;
+  border-width: 3px;
+  border-radius: 25px 0 0 25px;
+  border-color: #fff;
+  border-style: solid;
+  background-color: #fff;
+  padding-left: 20px;
 }
 
 .IdInputInput:focus {
-    border-color: #6534FF;
-    outline: none;
+  border-color: #6534ff;
+  outline: none;
 }
 
 .IdInputInput::placeholder {
-    font-size: 1.75rem;
+  font-size: 1.75rem;
 }
 
 .IdInputButton {
-    grid-column-start: 2;
-    width: 5rem;
-    height: 4rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #6534FF;
-    border: none;
-    border-radius: 0 25px 25px 0;
-    cursor: pointer;
+  grid-column-start: 2;
+  width: 5rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #6534ff;
+  border: none;
+  border-radius: 0 25px 25px 0;
+  cursor: pointer;
 }
 
 .IdInputADD {
-    font-size: 2rem;
-    font-weight: bold;
-    letter-spacing: 0.5px;
-    color: #fff;
-    user-select: none;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  color: #fff;
+  user-select: none;
 }
 
 @media (max-width: 802px) {
-    .IdInputForm {
-        width: 90%;
-    }
+  .IdInputForm {
+    width: 90%;
+  }
 
-    .IdInputInput {
-        width: 100%;
-    }
+  .IdInputInput {
+    width: 100%;
+  }
 }

@@ -1,43 +1,43 @@
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    padding-top: 25px;
-    position: fixed;
-    top: 0;
-    user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 25px;
+  position: fixed;
+  top: 0;
+  user-select: none;
 }
 
 .home {
-    margin-left: 50px;
-    cursor: pointer;
+  margin-left: 50px;
+  cursor: pointer;
 }
 
 .home:hover {
-    opacity: 80%;
+  opacity: 80%;
 }
 
 .social {
-    margin-left: 50px;
+  margin-left: 50px;
 }
 
 .faq {
-    color: #fff;
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: end;
-    margin-right: 50px;
-    cursor: pointer;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: end;
+  margin-right: 50px;
+  cursor: pointer;
 }
 
 .faq:hover {
-    opacity: 80%;
+  opacity: 80%;
 }
 
 @media (max-width: 802px) {
-    .navbar {
-        padding-bottom: 25px;
-        background-color: #000001;
-    }
+  .navbar {
+    padding-bottom: 25px;
+    background-color: #000001;
+  }
 }

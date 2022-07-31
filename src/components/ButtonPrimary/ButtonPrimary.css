@@ -1,33 +1,32 @@
 .button-primary {
-    text-decoration: none;
-    font-size: 2rem;
-    font-weight: bold;
-    background-color: #6534FF;
-    border: none;
-    border-radius: 25px;
-    width: 15rem;
-    height: 4rem;
-    cursor: pointer;
-    letter-spacing: 0.5px;
-    margin-bottom: 68px;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: #6534ff;
+  border: none;
+  border-radius: 25px;
+  width: 15rem;
+  height: 4rem;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  margin-bottom: 68px;
 }
 
 .button-primary:hover {
-    transition: all 0.3s ease 0s;
-    text-shadow: 0px 0px 25px #fff;
-    box-shadow: 0px 0px 15px #6534FF;
-
+  transition: all 0.3s ease 0s;
+  text-shadow: 0px 0px 25px #fff;
+  box-shadow: 0px 0px 15px #6534ff;
 }
 
 .button-primary:active {
-    opacity: 80%;
-    transition: all 0.3s ease 0s;
-    text-shadow: 0px 0px 25px #fff;
-    box-shadow: 0px 0px 15px #6534FF;
+  opacity: 80%;
+  transition: all 0.3s ease 0s;
+  text-shadow: 0px 0px 25px #fff;
+  box-shadow: 0px 0px 15px #6534ff;
 }
 
 @media (max-width: 802px) {
-    .button-primary {
-        margin-bottom: 0px;
-    }
+  .button-primary {
+    margin-bottom: 0px;
+  }
 }
