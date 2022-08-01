@@ -1,0 +1,17 @@
+.mustHaveCheckBoxContainer {
+  display: flex;
+  width: 90%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  font-size: 1.2rem;
+}
+
+.mustHaveCheckBoxContainer input {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.5rem;
+  background-color: brown;
+}

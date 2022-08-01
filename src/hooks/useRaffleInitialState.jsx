@@ -5,6 +5,7 @@ const initialState = {
   winnersCount: 1,
   totalAddresses: [],
   faqActive: false,
+  mustHaveAllPOAPs: false,
 }
 
 const useInitialState = () => {
@@ -45,6 +46,13 @@ const useInitialState = () => {
     })
   }
 
+  const setMustHaveAllPOAPs = (payload) => {
+    setState({
+      ...state,
+      mustHaveAllPOAPs: payload,
+    })
+  }
+
   const setInitialState = () => {
     setState(initialState)
   }
@@ -57,6 +65,7 @@ const useInitialState = () => {
     setTotalAddresses,
     setFaqActive,
     setInitialState,
+    setMustHaveAllPOAPs,
   }
 }
 

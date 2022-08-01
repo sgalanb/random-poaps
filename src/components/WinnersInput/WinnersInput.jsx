@@ -7,6 +7,7 @@ import { ReactComponent as MinusSolid } from 'images/minus-solid.svg'
 import { ReactComponent as PlusSolid } from 'images/plus-solid.svg'
 import { getTotalAddresses } from 'services/getTotalAddresses'
 import { Spinner } from 'components/Spinner/Spinner'
+import { useLocation } from 'wouter'
 
 export default function WinnersInput() {
   const { setContextWinners, setTotalAddresses, state } =
@@ -15,17 +16,27 @@ export default function WinnersInput() {
   const [winners, setWinners] = useState(state.winnersCount)
   const [addressesLength, setAddressesLength] = useState(100000)
 
+  // eslint-disable-next-line no-unused-vars
+  const [location, setLocation] = useLocation()
+
   useEffect(() => {
     setLoading(true)
-    getTotalAddresses(state.listOfIDs).then((totalAddresses) => {
-      setTotalAddresses(totalAddresses)
-      setAddressesLength(totalAddresses.length)
-      if (totalAddresses.length < winners) {
-        setContextWinners(1)
-        setWinners(1)
+    getTotalAddresses(state.listOfIDs, state.mustHaveAllPOAPs).then(
+      (totalAddresses) => {
+        if (totalAddresses.length === 0) {
+          toast.error("There's no addresses with all selected POAPs")
+          setLocation('/add-events')
+        } else {
+          setTotalAddresses(totalAddresses)
+          setAddressesLength(totalAddresses.length)
+          if (totalAddresses.length < winners) {
+            setContextWinners(1)
+            setWinners(1)
+          }
+          setLoading(false)
+        }
       }
-      setLoading(false)
-    })
+    )
   }, [])
 
   const handlePlus = () => {
