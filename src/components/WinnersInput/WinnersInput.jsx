@@ -24,7 +24,7 @@ export default function WinnersInput() {
     getTotalAddresses(state.listOfIDs, state.mustHaveAllPOAPs).then(
       (totalAddresses) => {
         if (totalAddresses.length === 0) {
-          toast.error("There's no addresses who has all selected POAPs")
+          toast.error("There's no addresses with all selected POAPs")
           setLocation('/add-events')
         } else {
           setTotalAddresses(totalAddresses)
