@@ -10,6 +10,7 @@ import Heading2 from 'components/Heading2/Heading2'
 import IdInput from 'components/IdInput/IdInput'
 import NavArrows from 'components/NavArrows/NavArrows'
 import Tip from 'components/Tip/Tip'
+import MustHaveCheckBox from 'components/MustHaveCheckBox/MustHaveCheckBox'
 
 export default function Events() {
   const { state } = useContext(RaffleContext)
@@ -31,6 +32,7 @@ export default function Events() {
       />
       <Heading2 text={'Add POAPs to the raffle'} />
       <IdInput />
+      <MustHaveCheckBox />
       <Tip text={'Tap an event to remove it'} />
       <AddedEvents />
     </div>
