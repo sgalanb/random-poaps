@@ -1,8 +1,16 @@
+// eslint-disable-next-line no-undef
+const API_KEY = process.env.REACT_APP_POAP_API_KEY
+
+const options = {
+  method: 'GET',
+  headers: { accept: 'application/json', 'x-api-key': API_KEY },
+}
+
 export const getTotalAddresses = (ids, mustHaveAllPOAPs) => {
   async function fetchAll() {
     const urls = []
     for (const id of ids) {
-      await fetch(`https://api.poap.xyz/event/${id}/poaps`)
+      await fetch(`https://api.poap.tech/event/${id}/poaps`, options)
         .then((response) => {
           if (response.ok) {
             return response.json()
@@ -19,7 +27,8 @@ export const getTotalAddresses = (ids, mustHaveAllPOAPs) => {
           while (i <= numberOfRequests) {
             urls.push(
               fetch(
-                `https://api.poap.xyz/event/${id}/poaps?limit=300&offset=${offset}`
+                `https://api.poap.tech/event/${id}/poaps?limit=300&offset=${offset}`,
+                options
               )
             )
             offset = offset + 300
